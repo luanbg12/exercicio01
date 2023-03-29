@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>calc</p>
+                <p>THEME</p>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="calculator">
+            <input type="text" id="input">
+            <div class="button">
+            <button type="button" onclick="addToInput('7')">7</button>
+            <button type="button" onclick="addToInput('8')">8</button>
+            <button type="button" onclick="addToInput('9')">9</button>
+            <button type="button" onclick="addToInput('DEL')">DEL</button>
+            <br><br>
+            <button type="button" onclick="addToInput(4)">4</button>
+            <button type="button" onclick="addToInput(5)">5</button>
+            <button type="button" onclick="addToInput(6)">6</button>
+            <button type="button" onclick="addToInput(+)">+</button>
+            <br><br>
+            <button type="button" onclick="addToInput(.)">.</button>
+            <button type="button" onclick="addToInput(0)">0</button>
+            <button type="button" onclick="calculate(/)">/</button>
+            <button type="button" onclick="calculate(x)">x</button>
+            <br></br>
+            <button type="button" onclick="addToInput(RESET)">RESET</button>
+            <button type="submit">=</button>
+            <br></br>
+        </div>
+        </form>
+
+        <br><br>
+
+
+</body>
+</html>
+
+
+CSS
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+    align-items: center;
+
+}
+input {
+    background-color: rgb(37, 32, 109);
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: inline-block;
+    left: 800px;
+
+}
+button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100px;
+        flex-wrap: wrap;
+        display: inline-block;
+        
+      }
