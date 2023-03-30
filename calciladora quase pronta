@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="container">
+        <div class="teste">
+            <p>calc</p>
+        </div>
+    </div>
+            <div class="tema">
+                <p>THEME</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="fundo"></div>
+            <div>
+            <div class="calculator">
+            <input type="text" id="input">
+            <div class="button">
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button class="azul" type="button">DEL</button>
+            <br><br>
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button">+</button>
+            <br><br>
+            <button type="button">.</button>
+            <button type="button">0</button>
+            <button type="button">/</button>
+            <button type="button">x</button>
+            <br></br>
+            <button class="azul" type="button">RESET</button>
+            <button class="igual" type="submit">=
+            </button>
+            <br></br>
+            <div class="box-1">
+                
+            </div>
+        </div>
+        </form>
+
+        <br><br>
+
+
+</body>
+</html>
+
+css
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3b4664 ;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input {
+    background-color: #181f32;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    left: 600px;
+}
+button{
+        justify-content: center;
+        align-items: center;
+        background-color: #eae3db;
+        width: 98px;
+        height: 100px;
+        flex-wrap: wrap;
+        display: inline-block;
+        margin-top: 20px;
+        border-radius: 10px;
+        color:#414954;
+        font-size: large;
+}
+
+.azul{
+    background-color:#647299;
+    color: white;
+}
+
+.igual{
+    background-color: #d13f30;
+    width: 300px;
+    color: #fff7ef;
+}
+
+.teste {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.fundo{
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    flex-wrap: wrap;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+    color:#414954;
+    font-size: large;
+}
